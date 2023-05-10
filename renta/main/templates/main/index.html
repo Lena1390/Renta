@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Rent Stock</h1>
+    <p>СЕРВИС АРЕНДЫ ВЕЩЕЙ</p>
+    <p>ЗДЕСЬ ВЫ СМОЖЕТЕ СДАТЬ И ВЗЯТЬ В АРЕНДУ ЛЮБЫЕ ВЕЩИ</p>
+
+    <title>Взять в аренду</title>
+    <style>
+              .btn {
+              display: inline-block;
+              background: black;
+              color: white;
+              padding: 0.5rem 1.5rem;
+              text-decoration: none;
+              border-radius: 7px;
+              }
+          </style>
+          </head>
+          <body>
+          <a href="{% url 'take' %}" class="btn">Взять в аренду</a>
+          </body>
+
+    <title>Сдать в аренду</title>
+    <style>
+              .btn  {
+              display: inline-block;
+              background: black;
+              color: white;
+              padding: 0.5rem 1.5rem;
+              text-decoration: none;
+              border-radius: 7px;
+              }
+          </style>
+          </head>
+          <body>
+          <a href="#" class="btn">Сдать в аренду</a>
+          </body>
+
+    <form action="" method="get">
+  <input name="s" placeholder="Искать здесь..." type="search">
+  <button type="submit">Поиск</button>
+</form>
+</div>
+{% endblock %}
+
