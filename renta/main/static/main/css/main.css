@@ -98,3 +98,7 @@ footer-col ul li: not(:last-child){
 }
 /* footer */
 
+ .img {
+   height: 200px;
+   width: 200px;
+}

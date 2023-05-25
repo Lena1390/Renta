@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Каталог
+{% endblock %}
+
+{% block content %}
+<h1 xmlns="http://www.w3.org/1999/html">Каталог товаров</h1>
+    <p>Объявления</p>
+    {% for b in tasks %}
+      <div class="alert alert-secondary" >
+          <a>{{ b.title }}</a>
+          <p>{{ b.body }}</p>
+          <img src="{{ b.image.url }}" alt="{{ b.image }}" width="100">
+         <p>{{ b.task }}</p>
+          <button  class="btn btn-dark">написать арендодателю</button>
+          <button  class="btn btn-dark">арендовать</button>
+          <p>{{ b.time_create }}</p>
+        <hr>
+      </div>
+    {% endfor %}
+{% endblock %}
+

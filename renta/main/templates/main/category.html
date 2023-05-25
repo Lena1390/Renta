@@ -13,9 +13,10 @@
            <div class='card-image'>
 
            </div>
-
+            <div class='card-image'>
+                <img src='https://ali-fa.ru/upload/iblock/f6b/f6be24613ed805a417f823572a721666.jpg' width="300">
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Инструменты</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'catalog' %}">Инструменты</a>
            </div>
 
 
@@ -23,11 +24,11 @@
         <div class='card'>
 
             <div class='card-image'>
-                <img class='card-img'  src='card.jpg'>
+                <img src='https://mykaleidoscope.ru/uploads/posts/2021-03/thumbs/1615281908_10-p-krasivie-platya-na-veshalke-obraz-11.jpg' width="300">
             </div>
 
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Одежда</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'cloth' %}">Одежда</a>
            </div>
 
 
@@ -35,21 +36,21 @@
         <div class='card'>
 
            <div class='card-image'>
-               <img class='card-img'  src='card.jpg'>
+               <img src='https://tehnoteca.ru/img/1708/1707128/jones_mountain_twin_151_2019_2020_7.jpg' width="300">
            </div>
 
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Спорт</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'sport' %}">Спорт</a>
            </div>
               </div>
         <div class='card'>
 
            <div class='card-image'>
-               <img class='card-img'  src='card.jpg'>
+               <img src='https://vazbrudkids.ru/thumb/2/eV8PYi7rB7-_f7eC7n4h6g/800r800/d/eb578d8643e536118e79d30690db2875.jpg' width="300" >
            </div>
 
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Для детей</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'child' %}">Детские товары</a>
            </div>
 
 
@@ -58,23 +59,24 @@
         <div class='card'>
 
            <div class='card-image'>
-               <img class='card-img'  src='card.jpg'>
+               <img src='https://mebellka.ru/wp-content/uploads/8/2/a/82a592d6da0f8bbe6be948b72daea6a8.jpeg' width="300">
            </div>
 
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Для дома</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'rest' %}">Отдых и развлечения</a>
            </div>
         </div>
 
-             <div class='card'>
+        <div class='card'>
 
            <div class='card-image'>
-               <img class='card-img'  src='card.jpg'>
+               <img src='https://shoeboxdwelling.com/wp-content/uploads/2013/06/yoy_book_02.jpg' width="300">
            </div>
 
            <div class='card-title'>
-               <a class="me-3 py-2 text-dark text-decoration-none" href="#">Инвентарь</a>
+               <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'other' %}">Другое</a>
            </div>
+        </div>
 
 
              </div>
@@ -84,6 +86,4 @@
 
 
      </div>
-
-</div>
 {% endblock %}
